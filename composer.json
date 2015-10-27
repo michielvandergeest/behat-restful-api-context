@@ -1,0 +1,21 @@
+{
+    "name": "michiel/behat-restful-api-context",
+    "description": "Behat context to facilitate testing Restful API's",
+    "require": {
+        "php": ">=5.4",
+        "behat/behat": "~3.0.6",
+        "guzzlehttp/guzzle": "^6.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michiel van der Geest",
+            "email": "hello@michielvandergeest.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Michiel\\RestfulApiContext\\": "src/"
+        }
+    }
+}
