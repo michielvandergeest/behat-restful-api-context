@@ -88,11 +88,11 @@ trait Request {
             break;
 
             case 'POST':
-                $this->response = $this->client->post($this->url, ['body' => (array) $this->input]);
+                $this->response = $this->client->post($this->url, ['form_params' => (array) $this->input]);
             break;
 
             case 'PUT':
-                $this->response = $this->client->put($this->url, ['body' => (array) $this->input]);
+                $this->response = $this->client->put($this->url, ['form_params' => (array) $this->input]);
             break;
 
             case 'DELETE':
