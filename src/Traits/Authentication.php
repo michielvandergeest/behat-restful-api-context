@@ -9,7 +9,7 @@ trait Authentication {
     {
         $url = $this->getParameter('base_url') . $this->getParameter('login_path');
 
-        $response = $this->client->post($url, ['body'=>[$this->getParameter('login_identifier') => $username, 'password' => $password]]);
+        $response = $this->client->post($url, ['form_params'=>[$this->getParameter('login_identifier') => $username, 'password' => $password]]);
 
         $data = json_decode($response->getBody(true));
 
